@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "96E118334AD515996329FC87B026CB24B0B95412",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "96E118334AD515996329FC87B026CB24B0B95412" : 0,
+    "BC91DC5743753AC539993EDCEFBCC05738363D9C" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "AD115CD9-A8CE-4ACF-A4F7-73F975B6880D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "96E118334AD515996329FC87B026CB24B0B95412" : "2114-ios\/",
+    "BC91DC5743753AC539993EDCEFBCC05738363D9C" : "cg-ios-client"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "CelestialGlory",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "CelestialGlory.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ziquid.git.beanstalkapp.com:\/ziquid\/2114-ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "96E118334AD515996329FC87B026CB24B0B95412"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "ziquid.beanstalkapp.com:\/ziquid\/cg-ios-client.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "BC91DC5743753AC539993EDCEFBCC05738363D9C"
+    }
+  ]
+}
