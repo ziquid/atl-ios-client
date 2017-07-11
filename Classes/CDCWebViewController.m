@@ -35,9 +35,9 @@
 #endif
     
 #ifdef DEBUG
-    NSString *urlCore = @"http://stl2114.dev.game.ziquid.com/stlouis/bounce/";
+    NSString *urlCore = @"http://dev.atl.game.ziquid.com/atl/bounce/";
 #else
-    NSString *urlCore = @"http://stl2114.game.ziquid.com/stlouis/bounce/";
+    NSString *urlCore = @"http://atl.game.ziquid.com/atl/bounce/";
 #endif
     
 	NSString *urlAddress = [urlCore stringByAppendingString:self.uniqueIdentifier];
@@ -59,7 +59,7 @@
         [defaults setValue:authKey forKey:@"authKey"];
     }
     
-    NSString* secretAgent = [NSString stringWithFormat:@"%@ (com.ziquid.stl2114; %@; authKey=%@)",
+    NSString* secretAgent = [NSString stringWithFormat:@"%@ (com.ziquid.game.atl; %@; authKey=%@)",
                              normalAgent, versionStr, authKey];
     
     NSDictionary *dictionary = [[NSDictionary alloc] initWithObjectsAndKeys:secretAgent, @"UserAgent", nil];
@@ -93,7 +93,7 @@
     
 	self.url = [request URL];
 	NSString *urlString = [self.url absoluteString];
-    NSLog(@"visiting %@", urlString);
+  NSLog(@"visiting %@", urlString);
     
 	NSRange match10 = [urlString rangeOfString: @"https://www.paypal.com/buy/luck/10"];
 	
@@ -149,9 +149,9 @@
 			uniqueIdentifier = [[device identifierForVendor] UUIDString];
 
 #ifdef DEBUG
-			NSString *urlCore = @"http://stl2114.dev.game.ziquid.com/stlouis/home/";
+      NSString *urlCore = @"http://dev.atl.game.ziquid.com/atl/bounce/";
 #else
-			NSString *urlCore = @"http://stl2114.game.ziquid.com/stlouis/home/";
+      NSString *urlCore = @"http://atl.game.ziquid.com/atl/bounce/";
 #endif
 			NSString *urlAddress = [urlCore stringByAppendingString:uniqueIdentifier];
 			
@@ -162,7 +162,7 @@
 			NSURLRequest *requestObj = [NSURLRequest requestWithURL:defaultURL];
 			
 			//Load the request in the UIWebView.
-			[CDCWebView loadRequest:requestObj];
+			[self.CDCWebView loadRequest:requestObj];
 			
 		}
 		

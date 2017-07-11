@@ -37,9 +37,9 @@
 @synthesize storeObserver = _storeObserver;
 
 #ifdef DEBUG
-static NSString *ownServer = @"http://stl2114.dev.game.ziquid.com/stlouis/elders_do_purchase";
+static NSString *ownServer = @"http://dev.atl.game.ziquid.com/atl/elders_do_purchase";
 #else
-static NSString *ownServer = @"http://stl2114.game.ziquid.com/stlouis/elders_do_purchase";
+static NSString *ownServer = @"http://atl.game.ziquid.com/atl/elders_do_purchase";
 #endif
 
 static id<MKStoreKitDelegate> _delegate;
@@ -418,7 +418,7 @@ static MKStoreManager* _sharedStoreManager;
 -(BOOL) verifyProduct:(NSString *) productIdentifier
           withReceipt:(NSData *) receiptData
 {
-	if(ownServer == nil) return NO; // sanity check
+	if (ownServer == nil) return NO; // sanity check
 	
 	UIDevice *device = [UIDevice currentDevice];
 	NSString *uniqueIdentifier = [[device identifierForVendor] UUIDString];
@@ -441,7 +441,7 @@ static MKStoreManager* _sharedStoreManager;
                                                           timeoutInterval:60];
 	
 	// NSString *userAgent = [theRequest valueForHTTPHeaderField:@"User_Agent"];
-	// userAgent = [userAgent stringByAppendingString:@" (com.ziquid.celestialglory/iPhone)"];
+	// userAgent = [userAgent stringByAppendingString:@" (com.ziquid.game.atl/iPhone)"];
 	// NSLog(@"User-Agent: %@", userAgent);
 	
 	[theRequest setValue:@" (com.ziquid.celestialglory/iPhone)" forHTTPHeaderField:@"User-Agent"];

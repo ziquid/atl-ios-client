@@ -24,11 +24,11 @@
 #import "MKStoreObserver.h"
 
 // CONFIGURATION STARTS -- Change this in your app
-#define kConsumableBaseFeatureId @"com.ziquid.stl2114"
-#define kConsumableFeatureAId @"com.ziquid.stl2114.luck.10"
-#define kConsumableFeatureBId @"com.ziquid.stl2114.luck.35"
-#define kConsumableFeatureCId @"com.ziquid.stl2114.luck.150"
-#define kConsumableFeatureDId @"com.ziquid.stl2114.luck.320"
+#define kConsumableBaseFeatureId @"com.ziquid.game.atl"
+#define kConsumableFeatureAId @"com.ziquid.game.atl.luck.10"
+#define kConsumableFeatureBId @"com.ziquid.game.atl.luck.35"
+#define kConsumableFeatureCId @"com.ziquid.game.atl.luck.150"
+#define kConsumableFeatureDId @"com.ziquid.game.atl.luck.320"
 // consumable features should have only number as the last part of the product name
 // MKStoreKit automatically keeps track of the count of your consumable product
 
